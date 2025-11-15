@@ -1,0 +1,12 @@
+numpy
+opencv-python
+torch
+torchvision
+scikit-learn
+matplotlib
+pandas
+tqdm
+imageio
+imageio[ffmpeg]
+pyyaml
+requests

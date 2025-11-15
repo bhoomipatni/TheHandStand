@@ -1,0 +1,11 @@
+dataset:
+  raw_data_path: "data/raw"
+  video_data_path: "data/videos"
+  processed_data_path: "data/processed"
+  keypoints_path: "data/processed/keypoints"
+  skeletons_path: "data/processed/skeletons"
+  video_format: "mp4"
+  keypoint_extraction_method: "OpenPose"
+  skeleton_sequence_length: 30
+  num_keypoints: 18
+  frame_rate: 30

@@ -1,0 +1,24 @@
+data:
+  raw: "data/raw"
+  videos: "data/videos"
+  processed:
+    keypoints: "data/processed/keypoints"
+    skeletons: "data/processed/skeletons"
+
+downloader:
+  video_source: "YouTube"
+  download_format: "mp4"
+
+extractor:
+  keypoint_model: "OpenPose"
+  output_format: "json"
+
+training:
+  batch_size: 32
+  learning_rate: 0.001
+  num_epochs: 50
+  model_save_path: "models/skeleton_model.pth"
+
+evaluation:
+  metrics: ["accuracy", "f1_score"]
+  evaluation_split: "test"
