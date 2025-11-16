@@ -1,0 +1,18 @@
+{
+  "model_type": "simple_lstm",
+  "timestamp": "2025-11-16T01:21:57.856966",
+  "training_samples": 82,
+  "validation_samples": 21,
+  "total_samples": 103,
+  "validation_accuracy": 0.6666666865348816,
+  "validation_loss": 1.1611202955245972,
+  "gestures": [
+    "hello",
+    "no",
+    "please",
+    "thank_you",
+    "yes"
+  ],
+  "sequence_length": 30,
+  "feature_dim": 126
+}

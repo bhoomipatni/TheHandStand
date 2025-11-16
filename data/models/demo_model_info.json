@@ -1,0 +1,27 @@
+{
+  "model_type": "demo_optimized",
+  "timestamp": "2025-11-16T01:33:35.846574",
+  "training_samples": 350,
+  "validation_samples": 62,
+  "total_samples": 412,
+  "validation_accuracy": 0.9677419066429138,
+  "cv_mean_accuracy": 0.9733470439910888,
+  "cv_std_accuracy": 0.026859625003755418,
+  "fold_scores": [
+    1.0,
+    0.9277108311653137,
+    0.9756097793579102,
+    1.0,
+    0.9634146094322205
+  ],
+  "validation_loss": 0.24531078338623047,
+  "gestures": [
+    "hello",
+    "no",
+    "please",
+    "thank_you",
+    "yes"
+  ],
+  "sequence_length": 30,
+  "feature_dim": 126
+}

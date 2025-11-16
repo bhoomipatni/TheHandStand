@@ -17,20 +17,29 @@
             <div class="camera-section">
                 <h2>📹 Camera Feed</h2>
                 <div id="camera-container">
-                    <!-- Camera feed will be inserted here -->
+                    <video id="video" autoplay muted playsinline></video>
+                    <button id="startStop">Start Camera</button>
                 </div>
             </div>
             
             <div class="translation-section">
-                <h2>📝 Translation</h2>
-                <div id="sentence-display">
-                    <!-- Current sentence will appear here -->
+                <h2>📝 Translation Results</h2>
+                <div id="gestureInfo" style="margin-bottom: 15px; padding: 10px; background: #f8f9fa; border-radius: 8px;">
+                    <strong>Current Gesture:</strong> <span id="currentGesture">None</span><br>
+                    <strong>Confidence:</strong> <span id="confidence">0%</span><br>
+                    <strong>Gesture Count:</strong> <span id="gestureCount">0</span>
                 </div>
-                <div id="translation-display">
-                    <!-- Translation will appear here -->
+                <div id="textOutput" style="margin-bottom: 15px; padding: 15px; background: #e8f5e8; border-radius: 8px; min-height: 60px;">
+                    <strong>Translation:</strong><br>
+                    <span id="translationText">Start camera to begin ASL recognition...</span>
+                </div>
+                <div id="speechStatus" style="margin-bottom: 15px; padding: 10px; background: #fff3cd; border-radius: 8px; display: none;">
+                    🔊 <span id="speechText">Speech synthesis in progress...</span>
                 </div>
                 <div class="controls">
-                    <button id="speak-btn">🎤 Speak</button>
+                    <button id="start-detection-btn">🎯 Start Detection</button>
+                    <button id="stop-detection-btn">🛑 Stop Detection</button>
+                    <button id="speak-btn">🎤 Speak Translation</button>
                     <button id="reset-btn">🔄 Reset</button>
                 </div>
             </div>

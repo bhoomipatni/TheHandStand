@@ -1,0 +1,12 @@
+{
+  "classes": [
+    "hello",
+    "no",
+    "please",
+    "thank_you",
+    "yes"
+  ],
+  "accuracy": 0.75,
+  "samples_per_class": 20,
+  "model_type": "balanced_lstm"
+}

@@ -1,11 +1,26 @@
 // SignSpeak AI JavaScript - unified camera, UI and ASL processing
 
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded, looking for elements...');
+    
     const video = document.getElementById('video');
     const startStop = document.getElementById('startStop');
+    const startDetectionBtn = document.getElementById('start-detection-btn');
+    const stopDetectionBtn = document.getElementById('stop-detection-btn');
     const speakBtn = document.getElementById('speak-btn');
     const resetBtn = document.getElementById('reset-btn');
     const textOutput = document.getElementById('textOutput');
+    
+    console.log('Elements found:', {
+        video: !!video,
+        startStop: !!startStop, 
+        textOutput: !!textOutput
+    });
+    
+    if (!video || !startStop || !textOutput) {
+        console.error('Missing required elements!');
+        return;
+    }
     
     let stream = null;
     let running = false;
@@ -47,6 +62,8 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         
+        console.log('Processing frame...');
+        
         try {
             // Create a canvas to capture the current video frame
             const canvas = document.createElement('canvas');
@@ -60,6 +77,8 @@ document.addEventListener('DOMContentLoaded', function() {
             // Convert canvas to base64 image data
             const imageData = canvas.toDataURL('image/jpeg', 0.8);
             
+            console.log('Sending frame to backend...');
+            
             // Send frame to backend for processing
             const response = await fetch('/process_frame', {
                 method: 'POST',
@@ -70,6 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             
             const result = await response.json();
+            console.log('Backend response:', result);
             
             if (result.success && result.gesture && result.gesture !== 'Unknown') {
                 const confidence = (result.confidence * 100).toFixed(1);
@@ -109,4 +129,31 @@ document.addEventListener('DOMContentLoaded', function() {
             console.warn('Speech Synthesis not supported in this browser.');
         }
     });
+
+    // Start Detection button handler
+startDetectionBtn.addEventListener('click', function() {
+    console.log('Start Detection button clicked');
+    fetch('/start_detection', { method: 'POST' })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Start detection response:', data);
+            if (data.success) {
+                updateTextOutput('🎯 Detection started - Show your gestures!');
+            }
+        })
+        .catch(err => console.error('Start detection error:', err));
 });
+
+// Stop Detection button handler
+stopDetectionBtn.addEventListener('click', function() {
+    console.log('Stop Detection button clicked');
+    fetch('/stop_detection', { method: 'POST' })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Stop detection response:', data);
+            if (data.success) {
+                updateTextOutput('🛑 Detection stopped');
+            }
+        })
+        .catch(err => console.error('Stop detection error:', err));
+})});

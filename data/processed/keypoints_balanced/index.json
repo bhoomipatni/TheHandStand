@@ -1,0 +1,802 @@
+[
+  {
+    "video_id": "hello_000",
+    "word": "hello",
+    "label": 0,
+    "keypoints_file": "data/processed/keypoints_balanced\\hello_000.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "hello_001",
+    "word": "hello",
+    "label": 0,
+    "keypoints_file": "data/processed/keypoints_balanced\\hello_001.npy",
+    "num_frames": 56,
+    "augmented": false
+  },
+  {
+    "video_id": "hello_002",
+    "word": "hello",
+    "label": 0,
+    "keypoints_file": "data/processed/keypoints_balanced\\hello_002.npy",
+    "num_frames": 27,
+    "augmented": false
+  },
+  {
+    "video_id": "hello_003",
+    "word": "hello",
+    "label": 0,
+    "keypoints_file": "data/processed/keypoints_balanced\\hello_003.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "hello_004",
+    "word": "hello",
+    "label": 0,
+    "keypoints_file": "data/processed/keypoints_balanced\\hello_004.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "hello_005",
+    "word": "hello",
+    "label": 0,
+    "keypoints_file": "data/processed/keypoints_balanced\\hello_005.npy",
+    "num_frames": 56,
+    "augmented": false
+  },
+  {
+    "video_id": "hello_006",
+    "word": "hello",
+    "label": 0,
+    "keypoints_file": "data/processed/keypoints_balanced\\hello_006.npy",
+    "num_frames": 27,
+    "augmented": false
+  },
+  {
+    "video_id": "hello_007",
+    "word": "hello",
+    "label": 0,
+    "keypoints_file": "data/processed/keypoints_balanced\\hello_007.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "hello_008",
+    "word": "hello",
+    "label": 0,
+    "keypoints_file": "data/processed/keypoints_balanced\\hello_008.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "hello_009",
+    "word": "hello",
+    "label": 0,
+    "keypoints_file": "data/processed/keypoints_balanced\\hello_009.npy",
+    "num_frames": 56,
+    "augmented": false
+  },
+  {
+    "video_id": "hello_010",
+    "word": "hello",
+    "label": 0,
+    "keypoints_file": "data/processed/keypoints_balanced\\hello_010.npy",
+    "num_frames": 27,
+    "augmented": false
+  },
+  {
+    "video_id": "hello_011",
+    "word": "hello",
+    "label": 0,
+    "keypoints_file": "data/processed/keypoints_balanced\\hello_011.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "hello_012",
+    "word": "hello",
+    "label": 0,
+    "keypoints_file": "data/processed/keypoints_balanced\\hello_012.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "hello_013",
+    "word": "hello",
+    "label": 0,
+    "keypoints_file": "data/processed/keypoints_balanced\\hello_013.npy",
+    "num_frames": 56,
+    "augmented": false
+  },
+  {
+    "video_id": "hello_014",
+    "word": "hello",
+    "label": 0,
+    "keypoints_file": "data/processed/keypoints_balanced\\hello_014.npy",
+    "num_frames": 27,
+    "augmented": false
+  },
+  {
+    "video_id": "hello_015",
+    "word": "hello",
+    "label": 0,
+    "keypoints_file": "data/processed/keypoints_balanced\\hello_015.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "hello_016",
+    "word": "hello",
+    "label": 0,
+    "keypoints_file": "data/processed/keypoints_balanced\\hello_016.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "hello_017",
+    "word": "hello",
+    "label": 0,
+    "keypoints_file": "data/processed/keypoints_balanced\\hello_017.npy",
+    "num_frames": 56,
+    "augmented": false
+  },
+  {
+    "video_id": "hello_018",
+    "word": "hello",
+    "label": 0,
+    "keypoints_file": "data/processed/keypoints_balanced\\hello_018.npy",
+    "num_frames": 27,
+    "augmented": false
+  },
+  {
+    "video_id": "hello_019",
+    "word": "hello",
+    "label": 0,
+    "keypoints_file": "data/processed/keypoints_balanced\\hello_019.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "no_000",
+    "word": "no",
+    "label": 1,
+    "keypoints_file": "data/processed/keypoints_balanced\\no_000.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "no_001",
+    "word": "no",
+    "label": 1,
+    "keypoints_file": "data/processed/keypoints_balanced\\no_001.npy",
+    "num_frames": 56,
+    "augmented": false
+  },
+  {
+    "video_id": "no_002",
+    "word": "no",
+    "label": 1,
+    "keypoints_file": "data/processed/keypoints_balanced\\no_002.npy",
+    "num_frames": 38,
+    "augmented": false
+  },
+  {
+    "video_id": "no_003",
+    "word": "no",
+    "label": 1,
+    "keypoints_file": "data/processed/keypoints_balanced\\no_003.npy",
+    "num_frames": 52,
+    "augmented": false
+  },
+  {
+    "video_id": "no_004",
+    "word": "no",
+    "label": 1,
+    "keypoints_file": "data/processed/keypoints_balanced\\no_004.npy",
+    "num_frames": 47,
+    "augmented": false
+  },
+  {
+    "video_id": "no_005",
+    "word": "no",
+    "label": 1,
+    "keypoints_file": "data/processed/keypoints_balanced\\no_005.npy",
+    "num_frames": 43,
+    "augmented": false
+  },
+  {
+    "video_id": "no_006",
+    "word": "no",
+    "label": 1,
+    "keypoints_file": "data/processed/keypoints_balanced\\no_006.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "no_007",
+    "word": "no",
+    "label": 1,
+    "keypoints_file": "data/processed/keypoints_balanced\\no_007.npy",
+    "num_frames": 56,
+    "augmented": false
+  },
+  {
+    "video_id": "no_008",
+    "word": "no",
+    "label": 1,
+    "keypoints_file": "data/processed/keypoints_balanced\\no_008.npy",
+    "num_frames": 38,
+    "augmented": false
+  },
+  {
+    "video_id": "no_009",
+    "word": "no",
+    "label": 1,
+    "keypoints_file": "data/processed/keypoints_balanced\\no_009.npy",
+    "num_frames": 52,
+    "augmented": false
+  },
+  {
+    "video_id": "no_010",
+    "word": "no",
+    "label": 1,
+    "keypoints_file": "data/processed/keypoints_balanced\\no_010.npy",
+    "num_frames": 47,
+    "augmented": false
+  },
+  {
+    "video_id": "no_011",
+    "word": "no",
+    "label": 1,
+    "keypoints_file": "data/processed/keypoints_balanced\\no_011.npy",
+    "num_frames": 43,
+    "augmented": false
+  },
+  {
+    "video_id": "no_012",
+    "word": "no",
+    "label": 1,
+    "keypoints_file": "data/processed/keypoints_balanced\\no_012.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "no_013",
+    "word": "no",
+    "label": 1,
+    "keypoints_file": "data/processed/keypoints_balanced\\no_013.npy",
+    "num_frames": 56,
+    "augmented": false
+  },
+  {
+    "video_id": "no_014",
+    "word": "no",
+    "label": 1,
+    "keypoints_file": "data/processed/keypoints_balanced\\no_014.npy",
+    "num_frames": 38,
+    "augmented": false
+  },
+  {
+    "video_id": "no_015",
+    "word": "no",
+    "label": 1,
+    "keypoints_file": "data/processed/keypoints_balanced\\no_015.npy",
+    "num_frames": 52,
+    "augmented": false
+  },
+  {
+    "video_id": "no_016",
+    "word": "no",
+    "label": 1,
+    "keypoints_file": "data/processed/keypoints_balanced\\no_016.npy",
+    "num_frames": 47,
+    "augmented": false
+  },
+  {
+    "video_id": "no_017",
+    "word": "no",
+    "label": 1,
+    "keypoints_file": "data/processed/keypoints_balanced\\no_017.npy",
+    "num_frames": 43,
+    "augmented": false
+  },
+  {
+    "video_id": "no_018",
+    "word": "no",
+    "label": 1,
+    "keypoints_file": "data/processed/keypoints_balanced\\no_018.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "no_019",
+    "word": "no",
+    "label": 1,
+    "keypoints_file": "data/processed/keypoints_balanced\\no_019.npy",
+    "num_frames": 56,
+    "augmented": false
+  },
+  {
+    "video_id": "please_000",
+    "word": "please",
+    "label": 2,
+    "keypoints_file": "data/processed/keypoints_balanced\\please_000.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "please_001",
+    "word": "please",
+    "label": 2,
+    "keypoints_file": "data/processed/keypoints_balanced\\please_001.npy",
+    "num_frames": 36,
+    "augmented": false
+  },
+  {
+    "video_id": "please_002",
+    "word": "please",
+    "label": 2,
+    "keypoints_file": "data/processed/keypoints_balanced\\please_002.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "please_003",
+    "word": "please",
+    "label": 2,
+    "keypoints_file": "data/processed/keypoints_balanced\\please_003.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "please_004",
+    "word": "please",
+    "label": 2,
+    "keypoints_file": "data/processed/keypoints_balanced\\please_004.npy",
+    "num_frames": 36,
+    "augmented": false
+  },
+  {
+    "video_id": "please_005",
+    "word": "please",
+    "label": 2,
+    "keypoints_file": "data/processed/keypoints_balanced\\please_005.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "please_006",
+    "word": "please",
+    "label": 2,
+    "keypoints_file": "data/processed/keypoints_balanced\\please_006.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "please_007",
+    "word": "please",
+    "label": 2,
+    "keypoints_file": "data/processed/keypoints_balanced\\please_007.npy",
+    "num_frames": 36,
+    "augmented": false
+  },
+  {
+    "video_id": "please_008",
+    "word": "please",
+    "label": 2,
+    "keypoints_file": "data/processed/keypoints_balanced\\please_008.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "please_009",
+    "word": "please",
+    "label": 2,
+    "keypoints_file": "data/processed/keypoints_balanced\\please_009.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "please_010",
+    "word": "please",
+    "label": 2,
+    "keypoints_file": "data/processed/keypoints_balanced\\please_010.npy",
+    "num_frames": 36,
+    "augmented": false
+  },
+  {
+    "video_id": "please_011",
+    "word": "please",
+    "label": 2,
+    "keypoints_file": "data/processed/keypoints_balanced\\please_011.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "please_012",
+    "word": "please",
+    "label": 2,
+    "keypoints_file": "data/processed/keypoints_balanced\\please_012.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "please_013",
+    "word": "please",
+    "label": 2,
+    "keypoints_file": "data/processed/keypoints_balanced\\please_013.npy",
+    "num_frames": 36,
+    "augmented": false
+  },
+  {
+    "video_id": "please_014",
+    "word": "please",
+    "label": 2,
+    "keypoints_file": "data/processed/keypoints_balanced\\please_014.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "please_015",
+    "word": "please",
+    "label": 2,
+    "keypoints_file": "data/processed/keypoints_balanced\\please_015.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "please_016",
+    "word": "please",
+    "label": 2,
+    "keypoints_file": "data/processed/keypoints_balanced\\please_016.npy",
+    "num_frames": 36,
+    "augmented": false
+  },
+  {
+    "video_id": "please_017",
+    "word": "please",
+    "label": 2,
+    "keypoints_file": "data/processed/keypoints_balanced\\please_017.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "please_018",
+    "word": "please",
+    "label": 2,
+    "keypoints_file": "data/processed/keypoints_balanced\\please_018.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "please_019",
+    "word": "please",
+    "label": 2,
+    "keypoints_file": "data/processed/keypoints_balanced\\please_019.npy",
+    "num_frames": 36,
+    "augmented": false
+  },
+  {
+    "video_id": "thank_you_000",
+    "word": "thank_you",
+    "label": 3,
+    "keypoints_file": "data/processed/keypoints_balanced\\thank_you_000.npy",
+    "num_frames": 45,
+    "augmented": false
+  },
+  {
+    "video_id": "thank_you_001",
+    "word": "thank_you",
+    "label": 3,
+    "keypoints_file": "data/processed/keypoints_balanced\\thank_you_001.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "thank_you_002",
+    "word": "thank_you",
+    "label": 3,
+    "keypoints_file": "data/processed/keypoints_balanced\\thank_you_002.npy",
+    "num_frames": 45,
+    "augmented": false
+  },
+  {
+    "video_id": "thank_you_003",
+    "word": "thank_you",
+    "label": 3,
+    "keypoints_file": "data/processed/keypoints_balanced\\thank_you_003.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "thank_you_004",
+    "word": "thank_you",
+    "label": 3,
+    "keypoints_file": "data/processed/keypoints_balanced\\thank_you_004.npy",
+    "num_frames": 45,
+    "augmented": false
+  },
+  {
+    "video_id": "thank_you_005",
+    "word": "thank_you",
+    "label": 3,
+    "keypoints_file": "data/processed/keypoints_balanced\\thank_you_005.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "thank_you_006",
+    "word": "thank_you",
+    "label": 3,
+    "keypoints_file": "data/processed/keypoints_balanced\\thank_you_006.npy",
+    "num_frames": 45,
+    "augmented": false
+  },
+  {
+    "video_id": "thank_you_007",
+    "word": "thank_you",
+    "label": 3,
+    "keypoints_file": "data/processed/keypoints_balanced\\thank_you_007.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "thank_you_008",
+    "word": "thank_you",
+    "label": 3,
+    "keypoints_file": "data/processed/keypoints_balanced\\thank_you_008.npy",
+    "num_frames": 45,
+    "augmented": false
+  },
+  {
+    "video_id": "thank_you_009",
+    "word": "thank_you",
+    "label": 3,
+    "keypoints_file": "data/processed/keypoints_balanced\\thank_you_009.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "thank_you_010",
+    "word": "thank_you",
+    "label": 3,
+    "keypoints_file": "data/processed/keypoints_balanced\\thank_you_010.npy",
+    "num_frames": 45,
+    "augmented": false
+  },
+  {
+    "video_id": "thank_you_011",
+    "word": "thank_you",
+    "label": 3,
+    "keypoints_file": "data/processed/keypoints_balanced\\thank_you_011.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "thank_you_012",
+    "word": "thank_you",
+    "label": 3,
+    "keypoints_file": "data/processed/keypoints_balanced\\thank_you_012.npy",
+    "num_frames": 45,
+    "augmented": false
+  },
+  {
+    "video_id": "thank_you_013",
+    "word": "thank_you",
+    "label": 3,
+    "keypoints_file": "data/processed/keypoints_balanced\\thank_you_013.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "thank_you_014",
+    "word": "thank_you",
+    "label": 3,
+    "keypoints_file": "data/processed/keypoints_balanced\\thank_you_014.npy",
+    "num_frames": 45,
+    "augmented": false
+  },
+  {
+    "video_id": "thank_you_015",
+    "word": "thank_you",
+    "label": 3,
+    "keypoints_file": "data/processed/keypoints_balanced\\thank_you_015.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "thank_you_016",
+    "word": "thank_you",
+    "label": 3,
+    "keypoints_file": "data/processed/keypoints_balanced\\thank_you_016.npy",
+    "num_frames": 45,
+    "augmented": false
+  },
+  {
+    "video_id": "thank_you_017",
+    "word": "thank_you",
+    "label": 3,
+    "keypoints_file": "data/processed/keypoints_balanced\\thank_you_017.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "thank_you_018",
+    "word": "thank_you",
+    "label": 3,
+    "keypoints_file": "data/processed/keypoints_balanced\\thank_you_018.npy",
+    "num_frames": 45,
+    "augmented": false
+  },
+  {
+    "video_id": "thank_you_019",
+    "word": "thank_you",
+    "label": 3,
+    "keypoints_file": "data/processed/keypoints_balanced\\thank_you_019.npy",
+    "num_frames": 300,
+    "augmented": false
+  },
+  {
+    "video_id": "yes_000",
+    "word": "yes",
+    "label": 4,
+    "keypoints_file": "data/processed/keypoints_balanced\\yes_000.npy",
+    "num_frames": 43,
+    "augmented": false
+  },
+  {
+    "video_id": "yes_001",
+    "word": "yes",
+    "label": 4,
+    "keypoints_file": "data/processed/keypoints_balanced\\yes_001.npy",
+    "num_frames": 30,
+    "augmented": false
+  },
+  {
+    "video_id": "yes_002",
+    "word": "yes",
+    "label": 4,
+    "keypoints_file": "data/processed/keypoints_balanced\\yes_002.npy",
+    "num_frames": 30,
+    "augmented": false
+  },
+  {
+    "video_id": "yes_003",
+    "word": "yes",
+    "label": 4,
+    "keypoints_file": "data/processed/keypoints_balanced\\yes_003.npy",
+    "num_frames": 218,
+    "augmented": false
+  },
+  {
+    "video_id": "yes_004",
+    "word": "yes",
+    "label": 4,
+    "keypoints_file": "data/processed/keypoints_balanced\\yes_004.npy",
+    "num_frames": 60,
+    "augmented": false
+  },
+  {
+    "video_id": "yes_005",
+    "word": "yes",
+    "label": 4,
+    "keypoints_file": "data/processed/keypoints_balanced\\yes_005.npy",
+    "num_frames": 23,
+    "augmented": false
+  },
+  {
+    "video_id": "yes_006",
+    "word": "yes",
+    "label": 4,
+    "keypoints_file": "data/processed/keypoints_balanced\\yes_006.npy",
+    "num_frames": 43,
+    "augmented": false
+  },
+  {
+    "video_id": "yes_007",
+    "word": "yes",
+    "label": 4,
+    "keypoints_file": "data/processed/keypoints_balanced\\yes_007.npy",
+    "num_frames": 30,
+    "augmented": false
+  },
+  {
+    "video_id": "yes_008",
+    "word": "yes",
+    "label": 4,
+    "keypoints_file": "data/processed/keypoints_balanced\\yes_008.npy",
+    "num_frames": 30,
+    "augmented": false
+  },
+  {
+    "video_id": "yes_009",
+    "word": "yes",
+    "label": 4,
+    "keypoints_file": "data/processed/keypoints_balanced\\yes_009.npy",
+    "num_frames": 218,
+    "augmented": false
+  },
+  {
+    "video_id": "yes_010",
+    "word": "yes",
+    "label": 4,
+    "keypoints_file": "data/processed/keypoints_balanced\\yes_010.npy",
+    "num_frames": 60,
+    "augmented": false
+  },
+  {
+    "video_id": "yes_011",
+    "word": "yes",
+    "label": 4,
+    "keypoints_file": "data/processed/keypoints_balanced\\yes_011.npy",
+    "num_frames": 23,
+    "augmented": false
+  },
+  {
+    "video_id": "yes_012",
+    "word": "yes",
+    "label": 4,
+    "keypoints_file": "data/processed/keypoints_balanced\\yes_012.npy",
+    "num_frames": 43,
+    "augmented": false
+  },
+  {
+    "video_id": "yes_013",
+    "word": "yes",
+    "label": 4,
+    "keypoints_file": "data/processed/keypoints_balanced\\yes_013.npy",
+    "num_frames": 30,
+    "augmented": false
+  },
+  {
+    "video_id": "yes_014",
+    "word": "yes",
+    "label": 4,
+    "keypoints_file": "data/processed/keypoints_balanced\\yes_014.npy",
+    "num_frames": 30,
+    "augmented": false
+  },
+  {
+    "video_id": "yes_015",
+    "word": "yes",
+    "label": 4,
+    "keypoints_file": "data/processed/keypoints_balanced\\yes_015.npy",
+    "num_frames": 218,
+    "augmented": false
+  },
+  {
+    "video_id": "yes_016",
+    "word": "yes",
+    "label": 4,
+    "keypoints_file": "data/processed/keypoints_balanced\\yes_016.npy",
+    "num_frames": 60,
+    "augmented": false
+  },
+  {
+    "video_id": "yes_017",
+    "word": "yes",
+    "label": 4,
+    "keypoints_file": "data/processed/keypoints_balanced\\yes_017.npy",
+    "num_frames": 23,
+    "augmented": false
+  },
+  {
+    "video_id": "yes_018",
+    "word": "yes",
+    "label": 4,
+    "keypoints_file": "data/processed/keypoints_balanced\\yes_018.npy",
+    "num_frames": 43,
+    "augmented": false
+  },
+  {
+    "video_id": "yes_019",
+    "word": "yes",
+    "label": 4,
+    "keypoints_file": "data/processed/keypoints_balanced\\yes_019.npy",
+    "num_frames": 30,
+    "augmented": false
+  }
+]

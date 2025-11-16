@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-11-16T01:19:06.033103",
+  "training_samples": 80,
+  "validation_samples": 20,
+  "total_samples": 100,
+  "validation_accuracy": 0.25,
+  "validation_loss": 1.6079988479614258,
+  "gestures": [
+    "hello",
+    "no",
+    "please",
+    "thank_you",
+    "yes"
+  ],
+  "sequence_length": 30,
+  "feature_dim": 126
+}

@@ -1,0 +1,170 @@
+[
+  {
+    "video_id": "hello_000",
+    "word": "hello",
+    "label": 0,
+    "keypoints_file": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\processed\\keypoints\\hello_000.npy",
+    "num_frames": 300,
+    "source_video": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\raw\\wlasl\\hello\\25ymRY7hbjs.mp4"
+  },
+  {
+    "video_id": "hello_001",
+    "word": "hello",
+    "label": 0,
+    "keypoints_file": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\processed\\keypoints\\hello_001.npy",
+    "num_frames": 56,
+    "source_video": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\raw\\wlasl\\hello\\DYjjcoTkNa0.mp4"
+  },
+  {
+    "video_id": "hello_002",
+    "word": "hello",
+    "label": 0,
+    "keypoints_file": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\processed\\keypoints\\hello_002.npy",
+    "num_frames": 27,
+    "source_video": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\raw\\wlasl\\hello\\FVjpLa8GqeM.mp4"
+  },
+  {
+    "video_id": "hello_003",
+    "word": "hello",
+    "label": 0,
+    "keypoints_file": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\processed\\keypoints\\hello_003.npy",
+    "num_frames": 300,
+    "source_video": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\raw\\wlasl\\hello\\SiBub8VD5wo.mp4"
+  },
+  {
+    "video_id": "no_000",
+    "word": "no",
+    "label": 1,
+    "keypoints_file": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\processed\\keypoints\\no_000.npy",
+    "num_frames": 300,
+    "source_video": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\raw\\wlasl\\no\\1_jXxjd0lKE.mp4"
+  },
+  {
+    "video_id": "no_001",
+    "word": "no",
+    "label": 1,
+    "keypoints_file": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\processed\\keypoints\\no_001.npy",
+    "num_frames": 56,
+    "source_video": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\raw\\wlasl\\no\\BqmquW0f1ok.mp4"
+  },
+  {
+    "video_id": "no_002",
+    "word": "no",
+    "label": 1,
+    "keypoints_file": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\processed\\keypoints\\no_002.npy",
+    "num_frames": 38,
+    "source_video": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\raw\\wlasl\\no\\mskmnqYYsGw.mp4"
+  },
+  {
+    "video_id": "no_003",
+    "word": "no",
+    "label": 1,
+    "keypoints_file": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\processed\\keypoints\\no_003.npy",
+    "num_frames": 52,
+    "source_video": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\raw\\wlasl\\no\\nyUDOPmQlZQ.mp4"
+  },
+  {
+    "video_id": "no_004",
+    "word": "no",
+    "label": 1,
+    "keypoints_file": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\processed\\keypoints\\no_004.npy",
+    "num_frames": 47,
+    "source_video": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\raw\\wlasl\\no\\pkzfT9cYvH0.mp4"
+  },
+  {
+    "video_id": "no_005",
+    "word": "no",
+    "label": 1,
+    "keypoints_file": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\processed\\keypoints\\no_005.npy",
+    "num_frames": 43,
+    "source_video": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\raw\\wlasl\\no\\QJXKaOSyl4o.mp4"
+  },
+  {
+    "video_id": "please_000",
+    "word": "please",
+    "label": 2,
+    "keypoints_file": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\processed\\keypoints\\please_000.npy",
+    "num_frames": 300,
+    "source_video": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\raw\\wlasl\\please\\hjS0dQDgbjo.mp4"
+  },
+  {
+    "video_id": "please_001",
+    "word": "please",
+    "label": 2,
+    "keypoints_file": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\processed\\keypoints\\please_001.npy",
+    "num_frames": 36,
+    "source_video": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\raw\\wlasl\\please\\rnb9FxPO7is.mp4"
+  },
+  {
+    "video_id": "please_002",
+    "word": "please",
+    "label": 2,
+    "keypoints_file": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\processed\\keypoints\\please_002.npy",
+    "num_frames": 300,
+    "source_video": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\raw\\wlasl\\please\\zHd4YEFzpwE.mp4"
+  },
+  {
+    "video_id": "thank_you_000",
+    "word": "thank_you",
+    "label": 3,
+    "keypoints_file": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\processed\\keypoints\\thank_you_000.npy",
+    "num_frames": 45,
+    "source_video": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\raw\\wlasl\\thank_you\\7XHOmZYiBew.mp4"
+  },
+  {
+    "video_id": "thank_you_001",
+    "word": "thank_you",
+    "label": 3,
+    "keypoints_file": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\processed\\keypoints\\thank_you_001.npy",
+    "num_frames": 300,
+    "source_video": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\raw\\wlasl\\thank_you\\x6CehcknaH8.mp4"
+  },
+  {
+    "video_id": "yes_000",
+    "word": "yes",
+    "label": 4,
+    "keypoints_file": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\processed\\keypoints\\yes_000.npy",
+    "num_frames": 43,
+    "source_video": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\raw\\wlasl\\yes\\-on_5PoBEak.mp4"
+  },
+  {
+    "video_id": "yes_001",
+    "word": "yes",
+    "label": 4,
+    "keypoints_file": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\processed\\keypoints\\yes_001.npy",
+    "num_frames": 30,
+    "source_video": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\raw\\wlasl\\yes\\0usayvOXzHo.mp4"
+  },
+  {
+    "video_id": "yes_002",
+    "word": "yes",
+    "label": 4,
+    "keypoints_file": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\processed\\keypoints\\yes_002.npy",
+    "num_frames": 30,
+    "source_video": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\raw\\wlasl\\yes\\3J2KaRL9i_Q.mp4"
+  },
+  {
+    "video_id": "yes_003",
+    "word": "yes",
+    "label": 4,
+    "keypoints_file": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\processed\\keypoints\\yes_003.npy",
+    "num_frames": 218,
+    "source_video": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\raw\\wlasl\\yes\\BRO-oYGV224.mp4"
+  },
+  {
+    "video_id": "yes_004",
+    "word": "yes",
+    "label": 4,
+    "keypoints_file": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\processed\\keypoints\\yes_004.npy",
+    "num_frames": 60,
+    "source_video": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\raw\\wlasl\\yes\\gpNDuOwyW7Q.mp4"
+  },
+  {
+    "video_id": "yes_005",
+    "word": "yes",
+    "label": 4,
+    "keypoints_file": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\processed\\keypoints\\yes_005.npy",
+    "num_frames": 23,
+    "source_video": "C:\\Users\\Isabel\\Documents\\GitHub\\SignLanguageTranslator\\data\\raw\\wlasl\\yes\\JLNxO35tB-U.mp4"
+  }
+]

@@ -3,12 +3,24 @@ Configuration Management for SignSpeak AI
 """
 
 import os
+import json
 from typing import Optional
 
 # API Configuration
 def get_gemini_api_key() -> Optional[str]:
-    """Get Gemini API key from environment variables"""
-    return os.getenv('GEMINI_API_KEY')
+    """Get Gemini service account path for authentication"""
+    # For service account authentication, return the path to the service account file
+    service_account_path = os.getenv('GEMINI_SERVICE_ACCOUNT_JSON', 'service_account.json')
+    if os.path.exists(service_account_path):
+        return service_account_path
+    
+    # Fallback to direct API key if service account not found
+    api_key = os.getenv('GEMINI_API_KEY')
+    if api_key and api_key.strip() and not api_key.startswith('#'):
+        return api_key.strip()
+    
+    print("No valid Gemini credentials found. Please check your service_account.json or .env")
+    return None
 
 def get_elevenlabs_api_key() -> Optional[str]:
     """Get ElevenLabs API key from environment variables"""

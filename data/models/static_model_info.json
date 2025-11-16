@@ -1,0 +1,14 @@
+{
+  "model_type": "static_geometric_classifier",
+  "accuracy": 0.9666666666666667,
+  "gesture_names": [
+    "hello",
+    "help",
+    "i_love_you",
+    "no",
+    "please",
+    "thank_you",
+    "yes"
+  ],
+  "training_samples": 150
+}
