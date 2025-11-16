@@ -36,3 +36,8 @@ pydub>=0.25.0
 
 # ElevenLabs Agent Integration
 elevenlabs>=0.3.0
+
+
+gunicorn==20.1.0
+requests==2.31.0
+

@@ -98,17 +98,6 @@ def test():
 def testpage():
     return "<h1>Flask is working!</h1><p>No template needed.</p>"
 
-@app.route('/minimal')
-def minimal_test():
-    print("🧪 MINIMAL ROUTE HIT - Loading minimal template")
-    try:
-        result = render_template('index_minimal.html')
-        print("✅ Minimal template rendered successfully")
-        return result
-    except Exception as e:
-        print(f"❌ Minimal template error: {str(e)}")
-        return f"Minimal template error: {str(e)}"
-
 @app.route('/process_frame', methods=['POST'])
 def process_frame():
     try:
@@ -225,14 +214,15 @@ def reset_demo():
 
 if __name__ == '__main__':
     import os
+    port = int(os.environ.get('PORT', 5001))
     print("=" * 50)
     print("🚀 Starting SignSpeak AI Flask App")
     print(f"📁 Templates folder: {os.path.abspath(app.template_folder)}")
     print(f"📁 Static folder: {os.path.abspath(app.static_folder)}")
-    print("📍 Main interface: http://127.0.0.1:5001/")
-    print("🔍 Debug page: http://127.0.0.1:5001/debug")  
-    print("🧪 Simple test: http://127.0.0.1:5001/simple")
+    print(f"📍 Main interface: http://0.0.0.0:{port}/")
+    print(f"🔍 Debug page: http://0.0.0.0:{port}/debug")  
+    print(f"🧪 Simple test: http://0.0.0.0:{port}/simple")
     print("💡 Components will load lazily when first accessed")
     print("🚫 Debug mode OFF to prevent double-loading")
     print("=" * 50)
-    app.run(host='127.0.0.1', port=5001, debug=False)
+    app.run(host='0.0.0.0', port=port, debug=False)
