@@ -10,7 +10,7 @@ SignSpeak AI captures hand gestures through a camera, recognizes ASL letters usi
 
 ```
 SignSpeak AI/
-├── app.py                 # Main Streamlit application entry point
+├── app.py                 # Main Flask application entry point
 ├── backend/               # Core processing modules
 │   ├── hand_tracking.py   # MediaPipe hand detection and landmark extraction
 │   ├── classifier.py      # ASL letter classification using ML models
@@ -18,7 +18,6 @@ SignSpeak AI/
 │   ├── translator.py      # Multi-language translation via Gemini API
 │   └── speech.py          # Text-to-speech using ElevenLabs/Google TTS
 ├── frontend/              # User interface components
-│   ├── ui.py             # Streamlit interface
 │   ├── templates/        # Flask HTML templates (alternative UI)
 │   └── static/           # CSS, JavaScript, images
 ├── models/               # Pre-trained ASL recognition models
@@ -33,7 +32,7 @@ SignSpeak AI/
 - **Real-time ASL Recognition**: Live camera feed processing with MediaPipe
 - **Multi-language Translation**: Support for Spanish, French, German, Italian, Portuguese, and more
 - **Text-to-Speech**: High-quality voice synthesis using ElevenLabs or Google TTS
-- **User-friendly Interface**: Clean Streamlit web interface with live feedback
+- **User-friendly Interface**: Clean web interface with live feedback
 - **Modular Architecture**: Easy to extend and customize for different use cases
 - **Cross-platform**: Works on Windows, macOS, and Linux
 
@@ -43,7 +42,6 @@ SignSpeak AI/
 - **Machine Learning**: scikit-learn, TensorFlow/Keras
 - **Translation**: Google Gemini API
 - **Text-to-Speech**: ElevenLabs API, Google TTS
-- **Web Interface**: Streamlit
 - **Language**: Python 3.8+
 
 ## 📋 Setup Requirements
