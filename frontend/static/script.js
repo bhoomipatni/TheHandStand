@@ -10,11 +10,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const speakBtn = document.getElementById('speak-btn');
     const resetBtn = document.getElementById('reset-btn');
     const textOutput = document.getElementById('textOutput');
+    // Preferred translation element: explicit span with id 'translationText'
+    // Fallbacks: span inside #textOutput or the #textOutput container itself
+    const translationTextEl = document.getElementById('translationText') || document.querySelector('#textOutput span') || textOutput;
     
     console.log('Elements found:', {
         video: !!video,
         startStop: !!startStop, 
-        textOutput: !!textOutput
+        textOutput: !!textOutput,
+        translationText: !!translationTextEl
     });
     
     if (!video || !startStop || !textOutput) {
@@ -36,6 +40,13 @@ document.addEventListener('DOMContentLoaded', function() {
             // Start ASL processing with reduced frequency to avoid overwhelming APIs
             processingInterval = setInterval(processCurrentFrame, 2000); // Process every 2 seconds instead of 1
             updateTextOutput('ASL Recognition Active - Show your gestures!');
+
+            // Do one immediate processing pass so the UI updates without waiting for the interval
+            try {
+                processCurrentFrame();
+            } catch (e) {
+                console.warn('Immediate frame processing failed:', e);
+            }
         } catch (err) {
             alert('Camera access denied or not available: ' + err.message);
         }
@@ -95,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const currentGesture = document.getElementById('currentGesture');
             const confidenceEl = document.getElementById('confidence'); 
             const gestureCount = document.getElementById('gestureCount');
-            const translationText = document.getElementById('translationText');
+            const translationText = translationTextEl; // Use resolved element from load
             
             console.log('🎯 UI Elements found:', {
                 currentGesture: !!currentGesture,
@@ -106,12 +117,14 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (result.success) {
                 // Update translation text
-                if (result.translation && translationText) {
-                    translationText.textContent = result.translation;
-                    console.log('✅ Updated translation text to:', result.translation);
-                } else if (result.translation) {
-                    updateTextOutput(result.translation);
-                    console.log('✅ Updated text output to:', result.translation);
+                if (result.translation) {
+                    if (translationText) {
+                        translationText.textContent = result.translation;
+                        console.log('✅ Updated translation text to:', result.translation);
+                    } else {
+                        updateTextOutput(result.translation);
+                        console.log('✅ Updated text output (fallback) to:', result.translation);
+                    }
                 }
                 
                 // Update gesture info if gesture detected
@@ -153,12 +166,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function updateTextOutput(message) {
-        const translationText = document.getElementById('translationText');
-        if (translationText) {
-            translationText.textContent = message;
-        } else {
-            textOutput.innerHTML = `<p style="margin:0; color:var(--text-dark);">${message}</p>`;
-        }
+            // Use resolved translation element if available, otherwise fall back to #textOutput
+            if (translationTextEl) {
+                translationTextEl.textContent = message;
+            } else if (textOutput) {
+                textOutput.innerHTML = `<p style="margin:0; color:var(--text-dark);">${message}</p>`;
+            }
     }
 
     startStop.addEventListener('click', () => {

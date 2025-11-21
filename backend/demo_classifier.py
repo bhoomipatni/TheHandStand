@@ -166,62 +166,64 @@ class DemoASLClassifier:
             return None
         
         try:
-            # Check if we have the static classifier loaded
-            if hasattr(self, 'static_model') and self.static_model is not None:
-                # Use static geometric classifier
-                features = self.extract_geometric_features(landmarks)
-                if features is None:
-                    return None
-                
-                features = features.reshape(1, -1)
-                predicted_class = self.static_model.predict(features)[0]
-                probabilities = self.static_model.predict_proba(features)[0]
-                confidence = float(np.max(probabilities))
-                
-                if confidence < 0.6:  # Confidence threshold
-                    return None
-                
-                # Map back to gesture name
-                gesture_name = self.label_encoder.inverse_transform([predicted_class])[0]
-                
-                return {
-                    'gesture': gesture_name,
-                    'confidence': confidence
-                }
-            
-            # Fallback for compatibility
+            # Ensure a model is loaded; __init__ should have attempted this already
             if not self.model_loaded:
-                self.load_model()
-            
-            if self.model_type == 'static':
+                # Try loading static first, then LSTM fallback
+                self.load_static_model() or self.load_lstm_fallback()
+
+            # Use behavior based on detected model type
+            if getattr(self, 'model_type', None) == 'static' and self.model is not None:
                 # Use static geometric classifier
                 features = self.extract_geometric_features(landmarks)
                 if features is None:
                     return None
-                
-                features_scaled = self.scaler.transform([features])
-                probabilities = self.model.predict_proba(features_scaled)[0]
-                predicted_class = np.argmax(probabilities)
-                confidence = float(probabilities[predicted_class])
-                
+
+                # Scale features if scaler available
+                try:
+                    features_scaled = self.scaler.transform([features]) if self.scaler is not None else [features]
+                except Exception:
+                    features_scaled = [features]
+
+                # Predict probabilities if available
+                if hasattr(self.model, 'predict_proba'):
+                    probabilities = self.model.predict_proba(features_scaled)[0]
+                    predicted_class = int(np.argmax(probabilities))
+                    confidence = float(probabilities[predicted_class])
+                else:
+                    # Fallback to direct predict if no predict_proba
+                    predicted_class = int(self.model.predict(features_scaled)[0])
+                    confidence = 1.0
+
                 if confidence < self.confidence_threshold:
                     return None
-                
+
                 gesture_name = self.idx_to_word.get(predicted_class, "Unknown")
-                return {
-                    'gesture': gesture_name,
-                    'confidence': confidence
-                }
-            
-            elif self.model_type == 'mock':
+                return {'gesture': gesture_name, 'confidence': confidence}
+
+            elif getattr(self, 'model_type', None) == 'mock':
                 # Mock classifier for testing
-                return {
-                    'gesture': 'hello',
-                    'confidence': 0.8
-                }
-            
+                return {'gesture': 'hello', 'confidence': 0.8}
+
             else:
-                # LSTM fallback (original behavior)
+                # Other model types (LSTM or unknown) - try to use generic predict/proba if possible
+                if self.model is not None:
+                    try:
+                        # Attempt to predict using whatever interface is available
+                        if hasattr(self.model, 'predict_proba'):
+                            probs = self.model.predict_proba([landmarks])[0]
+                            predicted_class = int(np.argmax(probs))
+                            confidence = float(probs[predicted_class])
+                            gesture_name = self.idx_to_word.get(predicted_class, 'Unknown')
+                            if confidence < self.confidence_threshold:
+                                return None
+                            return {'gesture': gesture_name, 'confidence': confidence}
+                        else:
+                            pred = self.model.predict([landmarks])[0]
+                            gesture_name = self.idx_to_word.get(int(pred), str(pred))
+                            return {'gesture': gesture_name, 'confidence': 0.6}
+                    except Exception as e:
+                        print(f"Prediction error (generic model): {e}")
+                        return None
                 return None
                 
         except Exception as e:
