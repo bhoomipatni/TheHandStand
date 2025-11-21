@@ -18,10 +18,17 @@ def get_pipeline():
     """Lazy load the ASL pipeline"""
     global pipeline
     if pipeline is None:
-        from backend.pipeline import ASLPipeline
-        print("🔄 Initializing ASL Pipeline...")
-        pipeline = ASLPipeline()
-        print("✅ ASL Pipeline ready!")
+        try:
+            from backend.pipeline import ASLPipeline
+            print("🔄 Initializing ASL Pipeline...")
+            pipeline = ASLPipeline()
+            print("✅ ASL Pipeline ready!")
+        except Exception as e:
+            # Don't raise here — log and allow callers to handle the missing pipeline
+            import traceback
+            print("❌ Pipeline initialization failed:", e)
+            traceback.print_exc()
+            pipeline = None
     return pipeline
 
 @app.route('/health')
@@ -113,11 +120,15 @@ def process_frame():
         
         # Process the frame using lazy-loaded pipeline
         current_pipeline = get_pipeline()
+        if current_pipeline is None:
+            print("❌ process_frame: pipeline not available")
+            return jsonify({'success': False, 'error': 'Backend pipeline initialization failed'}), 500
+
         result = current_pipeline.process_frame(frame)
-        
+
         # Debug: Print what we're sending to frontend
         print(f"🔄 Sending to frontend: {result}")
-        
+
         return jsonify(result)
         
     except Exception as e:
@@ -143,25 +154,19 @@ def speak_text():
         
         # Use lazy-loaded pipeline for speech
         current_pipeline = get_pipeline()
-        
+        if current_pipeline is None:
+            return jsonify({'success': False, 'error': 'Backend pipeline initialization failed'}), 500
+
         # Get the speech synthesizer from the pipeline
         if hasattr(current_pipeline, 'speech_synthesizer') and current_pipeline.speech_synthesizer:
             try:
                 current_pipeline.speech_synthesizer.speak_text(text)
-                return jsonify({
-                    'success': True,
-                    'message': f'Speaking: "{text}"'
-                })
+                return jsonify({'success': True, 'message': f'Speaking: "{text}"'})
             except Exception as e:
-                return jsonify({
-                    'success': False,
-                    'error': f'Speech synthesis failed: {str(e)}'
-                })
+                print(f"Speech synthesis error: {e}")
+                return jsonify({'success': False, 'error': f'Speech synthesis failed: {str(e)}'}), 500
         else:
-            return jsonify({
-                'success': False,
-                'error': 'Speech synthesizer not available'
-            })
+            return jsonify({'success': False, 'error': 'Speech synthesizer not available'}), 503
     
     except Exception as e:
         return jsonify({
@@ -173,11 +178,11 @@ def speak_text():
 def start_detection():
     try:
         current_pipeline = get_pipeline()
+        if current_pipeline is None:
+            return jsonify({'success': False, 'error': 'Backend pipeline initialization failed'}), 500
+
         current_pipeline.start_detection()
-        return jsonify({
-            'success': True,
-            'message': 'Detection started - show your gesture!'
-        })
+        return jsonify({'success': True, 'message': 'Detection started - show your gesture!'})
     except Exception as e:
         return jsonify({
             'success': False,
@@ -188,11 +193,11 @@ def start_detection():
 def stop_detection():
     try:
         current_pipeline = get_pipeline()
+        if current_pipeline is None:
+            return jsonify({'success': False, 'error': 'Backend pipeline initialization failed'}), 500
+
         current_pipeline.stop_detection()
-        return jsonify({
-            'success': True,
-            'message': 'Detection stopped'
-        })
+        return jsonify({'success': True, 'message': 'Detection stopped'})
     except Exception as e:
         return jsonify({
             'success': False,
@@ -204,11 +209,11 @@ def reset_demo():
     try:
         # Use lazy-loaded pipeline for reset
         current_pipeline = get_pipeline()
+        if current_pipeline is None:
+            return jsonify({'success': False, 'error': 'Backend pipeline initialization failed'}), 500
+
         current_pipeline.reset_conversation()
-        return jsonify({
-            'success': True,
-            'message': 'Demo reset - ready for new gestures!'
-        })
+        return jsonify({'success': True, 'message': 'Demo reset - ready for new gestures!'})
     except Exception as e:
         return jsonify({
             'success': False,
